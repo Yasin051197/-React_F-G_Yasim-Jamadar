@@ -5,7 +5,7 @@ import "./AromaticBarForm.css";
 import CheckBox from "../../Components/CheckBox";
 import InputTag from "../../Components/InputTag";
 import { Box } from "@mui/material";
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const FeedbackFormSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
@@ -88,9 +88,13 @@ const AromaticBarForm = (props) => {
           {showPopup && (
             <div className="popup-overlay">
               <div className="popup-content">
-                <CheckCircleIcon style={{ color: 'green', fontSize: '50px' }}/>
-                <p className="Provided_feedback">Thank you for Providing the feedback</p>
-                <p className="Apriciate_feedback">We will work towards improving your experience</p>
+                <CheckCircleIcon style={{ color: "green", fontSize: "50px" }} />
+                <p className="Provided_feedback">
+                  Thank you for completing the information
+                </p>
+                <p className="Apriciate_feedback">
+                  We will work towards improving your experience
+                </p>
                 <button onClick={handleClosePopup}>Close</button>
               </div>
             </div>

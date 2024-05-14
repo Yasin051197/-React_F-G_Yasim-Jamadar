@@ -1,103 +1,123 @@
 .form-container {
-    width: 80%;
-    margin: auto;
-    background-color: whitesmoke
-  }
-  
-  .AromaticBar_title{
-    text-align: left;
-    background-color: white;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  .form{
-    width: 100%;
-    margin: auto;
-    background-color: white;
-    border-radius: 5px;
-  }
-  #form_child1, #form_child2{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 100px;
-    row-gap: 20px;
-    margin-bottom: 1%;
-    padding: 5px;
-  }
-  .form-group{
-    display: grid;
-    text-align: left;
-  }
-  .form-group .Input_label{
-    font-weight: 600;
-  }
-  .form-group .Input_Field{
-    width:auto;
-    height: 30px;
-    border-radius: 5px;
-    border:0.2px solid gray;
-    }
-  .Options{
-    display: flex;
-    column-gap: 15%;
-    margin-top: 1%;
-    font-weight: 400;
-  }
-  .submit-button {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .popup-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  .popup-content .Provided_feedback {
-    font-weight: 500;
-  }
-  
-  .popup-content .Apriciate_feedback{
-    font-size: small;
-  }
-  .popup-content button {
-    background-color: rgb(133, 39, 241);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .error{
-    margin-top: 0.5%;
-    color: red;
-    background-color: rgb(249, 225, 225);
-    border-radius: 5px;
-    padding:0% 0% 0.5% 1%
-  }
+  width: 80%;
+  margin: auto;
+  background-color: whitesmoke
+}
 
-  #button_container{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 2%;
-  }
+.AromaticBar_title {
+  text-align: left;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: medium;
+}
+
+.form {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  padding-bottom: 2%;
+}
+
+#form_child1,
+#form_child2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  row-gap: 20px;
+  margin-bottom: 1%;
+  padding: 5px;
+}
+
+.form-group {
+  display: grid;
+  text-align: left;
+}
+
+.form-group .Input_label {
+  font-weight: 600;
+  font-size: small;
+}
+
+.form-group .Input_Field {
+  width: auto;
+  height: 30px;
+  border-radius: 5px;
+  border: 0.2px solid gray;
+}
+
+.Options {
+  display: flex;
+  column-gap: 15%;
+  margin-top: 1%;
+  font-weight: 400;
+}
+
+.submit-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content .Provided_feedback {
+  font-weight: 500;
+}
+
+.popup-content .Apriciate_feedback {
+  font-size: small;
+}
+
+.popup-content button {
+  background-color: rgb(133, 39, 241);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.error {
+  margin-top: 0.5%;
+  color: red;
+  background-color: rgb(249, 225, 225);
+  border-radius: 5px;
+  padding: 0% 0% 0.5% 1%
+}
+
+#button_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
+}
+
+#button_container button:hover{
+    background-color: #0c5f22;
+}
+
+.popup-content button:hover{
+  background-color: #163670;
+}

@@ -1,3 +1,35 @@
+#simple-tabpanel-1 {
+    width: 95%;
+    margin: auto;
+}
 
-  
-  
+.delete-select-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+.delete-select-container button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.AromaticBar_table_title {
+    font-weight: 500;
+}
+
+.AromaticBar_table_counts {
+    font-size: 13px;
+}
+
+.AromaticBar_table_title,
+.AromaticBar_table_counts {
+    text-align: left;
+    padding-left: 0.3%;
+    margin: 0%;
+}

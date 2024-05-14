@@ -5,6 +5,7 @@ import "./AromaticBarTable.css";
 const AromaticBarTable = (props) => {
   const { value, index } = props;
   const feedbackData = JSON.parse(localStorage.getItem("feedback")) || [];
+
   const columns = [
     { field: "name", headerName: "Name", width: 150 },
     { field: "email", headerName: "Email", width: 200 },
@@ -50,7 +51,15 @@ const AromaticBarTable = (props) => {
       aria-labelledby={`simple-tab-${index}`}
     >
       {value === index && (
-        <div style={{ height: 400, width: "100%" }}>
+        <div>
+          <p className="AromaticBar_table_title">Aromatic Bar</p>
+          <p className="AromaticBar_table_counts">
+            {feedbackData.length} record founds
+          </p>
+        </div>
+      )}
+      {value === index && (
+        <div style={{ height: "auto", width: "100%" }}>
           <DataGrid
             rows={rows}
             columns={columns}
@@ -63,9 +72,6 @@ const AromaticBarTable = (props) => {
             checkboxSelection
           />
         </div>
-      )}
-      {value === index && (
-        <button className="delete-selected-button">Delete</button>
       )}
     </div>
   );
