@@ -5,7 +5,7 @@ Implement two tabs
 
 Feedback form - 
  Techsatck used - ReactJS, Formik, Yup
- Addd validation - required all the fields, email must be in email type, mobile number must be 10 digit
+ Addd validation - required all the fields, email must be in email type, mobile number must be 10 digit and numbers
  
 Feedback List - 
  techstack used - Reactjs, Material UI
