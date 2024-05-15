@@ -8,7 +8,9 @@ import { Box } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const FeedbackFormSchema = Yup.object().shape({
-  name: Yup.string().required("Name is required"),
+  name: Yup.string()
+    .matches(/[a-zA-Z]/, "Name must contain at least one alphabet character")
+    .required("Name is required"),
   email: Yup.string().email("Invalid email").required("Email is required"),
   phone: Yup.string()
     .matches(/^[0-9]+$/, "Phone number must contain only numbers")
